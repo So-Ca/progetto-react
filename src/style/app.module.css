@@ -1,0 +1,303 @@
+/* variables */
+:root{
+  --mainColor: #C4E303;
+  --secondaryColor: #5c3100;
+  --paragraphColor: #444444;
+  --textColor: #333333;
+  --bgColor: rgb(196, 227, 3, 0.1);
+  --titleFont: "juice", sans-serif;
+  --primaryFont: "Hedvig Letters Sans", sans-serif;
+  --secondaryFont: "Josefin Sans", sans-serif;
+  --thirdFont: "Playpen Sans", sans-serif;
+  --thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
+  --thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
+  --thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
+  --thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
+}
+
+.app{
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center
+}
+
+/* head */
+.header{
+  margin: 1% auto 5% auto; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.app-title{
+  font-size: 3.5rem;
+  color: var(--mainColor);
+  text-shadow: var(--thickBrownShading);
+  font-family: var(--titleFont);
+}
+
+/* searchbar */
+.search-bar{
+  width: 600px;
+  height: 45px;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 25px;
+  position: relative;
+  font-size: 1.5rem;
+  text-indent: 20px;
+}
+.search-bar:focus{
+  outline: none;
+}
+
+/* search button */
+.search-btn{
+  margin: auto;
+  position: absolute;
+  top: 48px;
+  right: 81px;
+  height: 40px;
+  width: 60px;
+  border-radius: 20px;
+  border: none;
+}
+.search-btn:hover{
+  cursor: pointer;
+  border: 1px solid var(--secondaryColor);
+}
+
+/* carousel */
+.bg-carousel{
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* grid */
+.recipes-grid{
+  margin: auto 10%;
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* show more button */
+.show-more-btn{
+  margin: 1%;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: var(--secondaryFont);
+  font-size: 1.1rem;
+  border: 1px solid var(--mainColor);
+  background: rgb(222, 222, 222);
+  box-shadow: 0 0 5px var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+.show-more-btn:hover{
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid var(--secondaryColor);
+  box-shadow: 5px 5px 3px var(--secondaryColor);
+  transition: 0.3s linear;
+}
+.show-more-btn:active{
+  background: var(--secondaryColor);
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  transition: 0s;
+}
+
+/* media query */
+@media (max-width: 400px){
+  /* head */
+  .header{
+    margin: 5%; 
+    flex-direction: column;
+  }
+  .app-title{
+    margin: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  /* searchbar */
+  .search-bar{
+    width: 100%;
+  }
+  /* search button */
+  .search-btn{
+    top: 169px;
+    right: 30px;
+    height: 40px;
+    width: 60px;
+    background: rgb(196, 227, 3, 0.5);
+  }
+  /* grid */
+  .recipes-grid{
+    margin: auto 5%;
+    grid-template: auto auto / repeat(1, 1fr);
+  }
+  /* show more button */
+  .show-more-btn{
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px){
+  /* head */
+  .header{
+    margin: 5%; 
+    flex-direction: column;
+  }
+  .app-title{
+    margin: 5% auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  /* searchbar */
+  .search-bar{
+    width: 100%;
+  }
+  /* search button */
+  .search-btn{
+    top: 166.7px;
+    right: 95.8px;
+    height: 40px;
+    width: 60px;
+    background: rgb(196, 227, 3, 0.5);
+  }
+  /* grid */
+  .recipes-grid{
+    margin: auto 5%;
+    grid-template: auto auto / repeat(2, 1fr);
+  }
+  /* show more button */
+  .show-more-btn{
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px){
+  /* head */
+  .header{
+    margin: 5%; 
+    flex-direction: column;
+  }
+  .app-title{
+    margin: 5% auto;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  /* searchbar */
+  .search-bar{
+    width: 110%;
+  }
+  /* search button */
+  .search-btn{
+    top: 201px;
+    right: 152px;
+    height: 40px;
+    width: 60px;
+    background: rgb(196, 227, 3, 0.5);
+  }
+  /* grid */
+  .recipes-grid{
+    margin: auto 5%;
+    grid-template: auto auto / repeat(2, 1fr);
+  }
+  /* show more button */
+  .show-more-btn{
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  /* head */
+  .header{
+    margin: 5%; 
+  }
+  .app-title{
+    margin: 5% auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  /* searchbar */
+  .search-bar{
+    width: 100%;
+  }
+  /* search button */
+  .search-btn{
+    top: 107.5px;
+    right: 10px;
+    height: 40px;
+    width: 60px;
+    background: rgb(196, 227, 3, 0.5);
+  }
+  /* grid */
+  .recipes-grid{
+    margin: auto 5%;
+    grid-template: auto auto / repeat(2, 1fr);
+  }
+  /* show more button */
+  .show-more-btn{
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px){
+    /* head */
+    .header{
+      margin: 5%; 
+    }
+    .app-title{
+      margin: 5% auto;
+      font-size: 2.7rem;
+      text-align: center;
+    }
+    /* searchbar */
+    .search-bar{
+      width: 100%;
+    }
+    /* search button */
+    .search-btn{
+      top: 117px;
+      right: 13px;
+      height: 40px;
+      width: 60px;
+      background: rgb(196, 227, 3, 0.5);
+    }
+    /* grid */
+    .recipes-grid{
+      margin: auto 5%;
+      grid-template: auto auto / repeat(3, 1fr);
+    }
+    /* show more button */
+    .show-more-btn{
+      margin: 5% auto;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1700px){
+    .app-title{
+      text-align: center;
+    }
+    /* search button */
+    .search-btn{
+      top: 69px;
+      right: 16px;
+    }
+    /* grid */
+    .recipes-grid{
+      margin: auto 5%;
+      grid-template: auto auto / repeat(4, 1fr);
+    }
+    /* show more button */
+    .show-more-btn{
+      margin: 5% auto;
+    }
+}

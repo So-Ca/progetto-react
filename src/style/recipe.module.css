@@ -1,0 +1,77 @@
+/* variables */
+:root{
+  --mainColor: #C4E303;
+  --secondaryColor: #5c3100;
+  --paragraphColor: #444444;
+  --textColor: #333333;
+  --bgColor: rgb(196, 227, 3, 0.1);
+  --titleFont: "juice", sans-serif;
+  --primaryFont: "Hedvig Letters Sans", sans-serif;
+  --secondaryFont: "Josefin Sans", sans-serif;
+  --thirdFont: "Playpen Sans", sans-serif;
+  --thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
+  --thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
+  --thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
+  --thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
+}
+
+.recipe-preview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--secondaryColor);
+  background: #ffffff;
+}
+.recipe-preview:hover{
+  box-shadow: 5px 5px 10px var(--secondaryColor);
+  transition: 0.3s;
+  border: 2px solid var(--mainColor);
+}
+
+.recipe-name{
+  margin: 5% auto;
+  text-align: center;
+  font-family: var(--secondaryFont);
+  font-size: 2rem;
+  color: var(--secondaryColor);
+  pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.recipe-img{
+  margin: 1% auto;
+  display: block;
+  width: 100%;
+}
+
+.icons-container{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon{
+  margin: 0 auto 5% auto;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.link{
+  margin: 5% auto;
+  font-size: 1.2rem;
+  font-family: var(--secondaryFont);
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  text-shadow: var(--thinGreenShading);
+}
+.link:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
