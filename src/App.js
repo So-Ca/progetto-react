@@ -50,7 +50,7 @@ function App() {
       }
     }
     getRecipes();
-  }, [query]);
+  }, [query, request]);
 
 // searchBar input search
   function searchRecipes(e){
