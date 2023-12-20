@@ -16,20 +16,21 @@ function RecipesDetails(){
   const [error, setError] = useState(null);
 
 // request filtered by id
-  async function fetchDetails() {
-    try {
-      const apiKey = "ae960525345346719ea2b99447dd03a3";
-      const response = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`);
-      const data = await response.data;
-      setRecipeDetail(data);
-      console.log("This is selected recipe:", data);
-    } catch(error) {
-      console.error("Ops, there has been an error: ", error);
-      setError(error);
+  useEffect( ()=> {
+    async function fetchDetails() {
+      try {
+        const apiKey = "ae960525345346719ea2b99447dd03a3";
+        const response = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`);
+        const data = await response.data;
+        setRecipeDetail(data);
+        console.log("This is selected recipe:", data);
+      } catch(error) {
+        console.error("Ops, there has been an error: ", error);
+        setError(error);
+      }
     }
-  }
-
-  useEffect( ()=> { fetchDetails() }, [id, fetchDetails]);
+    fetchDetails();
+  }, [id]);
 
   return(
     <div className={style["page"]}>

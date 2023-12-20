@@ -23,33 +23,34 @@ function App() {
   const request = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&fillIngredients=true&addRecipeInformation=true&instructionsRequired=true&addRecipeNutrition=true&number=100&vegetarian=true&apiKey=${apiKey}`;
 
 // api request
-  async function getRecipes(){
-    try{
-      const response = await axios.get(request);
-      const data = response.data;
-      const vegetarian = data.results.filter( recipe => recipe.vegetarian === true);
-
-      if(query.trim() === ""){
-        setRecipes([]);
-        setWarningMessage(true);
-        return;
+  useEffect( ()=> {
+    async function getRecipes(){
+      try{
+        const response = await axios.get(request);
+        const data = response.data;
+        const vegetarian = data.results.filter( recipe => recipe.vegetarian === true);
+  
+        if(query.trim() === ""){
+          setRecipes([]);
+          setWarningMessage(true);
+          return;
+        }
+        if(vegetarian.length === 0){
+          setRecipes([]);
+          setWarningMessage(true);
+          return;
+        }
+  
+        setRecipes(vegetarian);
+        console.log("Those are the vegetarian recipes:", vegetarian);
+        setWarningMessage(false);
+      } catch(error){
+        console.error("Ops, there has been an error: ", error);
+        setError(error);
       }
-      if(vegetarian.length === 0){
-        setRecipes([]);
-        setWarningMessage(true);
-        return;
-      }
-
-      setRecipes(vegetarian);
-      console.log("Those are the vegetarian recipes:", vegetarian);
-      setWarningMessage(false);
-    } catch(error){
-      console.error("Ops, there has been an error: ", error);
-      setError(error);
     }
-  }
-
-  useEffect( ()=> { getRecipes() }, [query, getRecipes]);
+    getRecipes();
+  }, [query]);
 
 // searchBar input search
   function searchRecipes(e){
