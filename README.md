@@ -8,11 +8,12 @@
     This application is used to search for vegetarian recipes and view their details.
   </p>
 
-![header](https://github.com/So-Ca/progetto-react/assets/121359947/9ebbace0-427c-4b3f-8015-f1bedd7e92f7)
-![section](https://github.com/So-Ca/progetto-react/assets/121359947/884c621f-886f-4191-b7a4-3818f3b8591a)
-![footer](https://github.com/So-Ca/progetto-react/assets/121359947/98945965-914e-4ee8-a61d-24de7ccdda71)
-![head-details](https://github.com/So-Ca/progetto-react/assets/121359947/68b7952d-8ca9-4ba2-9918-fa38d37bed87)
-![sec-details](https://github.com/So-Ca/progetto-react/assets/121359947/1d249021-43a9-4297-98e0-0db791155517)
+![header](https://github.com/So-Ca/progetto-react/assets/121359947/4af4d9e6-7ea4-4b8e-8fb7-34a9f41b615b)
+![section](https://github.com/So-Ca/progetto-react/assets/121359947/04069a17-b448-4ea5-9802-b0036a60e0eb)
+![footer](https://github.com/So-Ca/progetto-react/assets/121359947/e3286807-e4b7-4672-a77a-560ae3952294)
+![head-details](https://github.com/So-Ca/progetto-react/assets/121359947/1803e1a9-a2dc-4486-819d-ad118962b2a9)
+![sec-details](https://github.com/So-Ca/progetto-react/assets/121359947/4e361ab5-44dc-4a18-9f6b-df0c13ee2b35)
+
 
   <h3>table of contents</h3>
   <ul>
@@ -56,12 +57,13 @@
 
   <p>Completely responsive site and it can be used in several device.</p>
 
-![responsive-min](https://github.com/So-Ca/progetto-react/assets/121359947/41e93bba-55ec-409b-84a8-2f5e3b14e7b4)
-![responsive-mid](https://github.com/So-Ca/progetto-react/assets/121359947/ce6663fc-a392-4b00-b093-282f192d4d30)
+![responsive-min](https://github.com/So-Ca/progetto-react/assets/121359947/819c0e59-01ee-4913-8d79-bf50bf806bad)
+![responsive-mid](https://github.com/So-Ca/progetto-react/assets/121359947/83953730-5e1c-4884-9429-3ea70da6b44b)
+
 
   <a name="contacts"></a>
   <h3>Contacts</h3>
 
-  <a href="">Green Plates</a><br>
+  <a href="https://progetto-react-so-ca.netlify.app/">Green Plates</a><br>
   <a href="so-ca-portfolio.netlify.app">Portfolio</a><br>
   <a href="https://www.linkedin.com/in/sonny-caputo-554315185">Likedin</a><br>
