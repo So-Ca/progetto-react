@@ -65,5 +65,5 @@
   <h3>Contacts</h3>
 
   <a href="https://progetto-react-so-ca.netlify.app/">Green Plates</a><br>
-  <a href="so-ca-portfolio.netlify.app">Portfolio</a><br>
+  <a href="https://sonny-caputo-portfolio.netlify.app/">Portfolio</a><br>
   <a href="https://www.linkedin.com/in/sonny-caputo-554315185">Likedin</a><br>
