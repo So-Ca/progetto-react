@@ -14,24 +14,27 @@ function Carousel({images}) {
     slider.style.left = newPosition;
   }
   
-// change slide every 5s
-  function autoChangeSlide(){
-    const slider = document.getElementById("slider");
-    setIndex( (prevIndex) => (prevIndex + 1) % images.length);
-    const newPosition = -index * 800 + "px";
-    slider.style.left = newPosition;
-  }
-  
+// change slide every 5s  
   useEffect( () => {
+    function autoChangeSlide(){
+      const slider = document.getElementById("slider");
+      setIndex( (prevIndex) => (prevIndex + 1) % images.length);
+      const newPosition = -index * 800 + "px";
+      slider.style.left = newPosition;
+    }
+
     const intervalId = setInterval(autoChangeSlide, 5000);
-    return () => clearInterval(intervalId);
-  }, [index, autoChangeSlide]);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [index, images.length]);
 
   return (
     <div className={style["carousel"]}>
       <div className={style["image-container"]} id="slider">
         {images.map( (image, i) => (
-          <img key={i} src={image} className={style["slider-image"]}/>
+          <img key={i} src={image} className={style["slider-image"]} alt="recipes gallery"/>
         ))}
       </div>
       <div className={style["button-container"]}>

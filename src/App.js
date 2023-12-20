@@ -20,7 +20,7 @@ function App() {
   const [visibleRecipes, setVisibleRecipes] = useState(20);
   const [error, setError] = useState(null);
   const [warningMessage, setWarningMessage] = useState(false);
-  const request = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&fillIngredients=true&addRecipeInformation=true&instructionsRequired=true&addRecipeNutrition=true&number=2000&vegetarian=true&apiKey=${apiKey}`;
+  const request = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&fillIngredients=true&addRecipeInformation=true&instructionsRequired=true&addRecipeNutrition=true&number=100&vegetarian=true&apiKey=${apiKey}`;
 
 // api request
   async function getRecipes(){
@@ -49,7 +49,7 @@ function App() {
     }
   }
 
-  useEffect( ()=> { getRecipes() }, [query]);
+  useEffect( ()=> { getRecipes() }, [query, getRecipes]);
 
 // searchBar input search
   function searchRecipes(e){
@@ -78,11 +78,11 @@ function App() {
           <>
             <div className={style["app"]}>
               <div className={style["header"]}>
-                <img className="logo" src={logo}/>
+                <img className="logo" src={logo} alt="logo"/>
                 <h1 className={style["app-title"]}>GREEN PLATES: Vegetarian Delights</h1>
                 <form className={style['search-form']} onSubmit={getSearch}>
                   <input className={style["search-bar"]} type="text" value={search} onChange={searchRecipes} placeholder="Find your favorite recipe..."/>
-                  <button className={style["search-btn"]} type="submit"><img src={searchIcon}/></button>
+                  <button className={style["search-btn"]} type="submit"><img src={searchIcon} alt="search icon"/></button>
                 </form>
               </div>
               <div className={style['bg-carousel']}>

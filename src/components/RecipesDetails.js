@@ -29,7 +29,7 @@ function RecipesDetails(){
     }
   }
 
-  useEffect( ()=> { fetchDetails() }, [id]);
+  useEffect( ()=> { fetchDetails() }, [id, fetchDetails]);
 
   return(
     <div className={style["page"]}>
@@ -38,7 +38,7 @@ function RecipesDetails(){
           <h1 className={style["recipe-name"]}>{recipeDetails.title}</h1>
           <div>
             <div className={style["img-info-container"]}>
-              <img className={style["recipe-img"]} src={recipeDetails.image} alt="Recipe Image"/>
+              <img className={style["recipe-img"]} src={recipeDetails.image} alt="Recipe"/>
               <div className={style["info-container"]}>
                 <p>Preparation Time: {recipeDetails.readyInMinutes}</p>
                 <p>Servings: {recipeDetails.servings}</p>

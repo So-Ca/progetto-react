@@ -16,7 +16,7 @@ function Recipe({props}) {
   return (
     <div className={style["recipe-preview"]}>
       <h1 className={style["recipe-name"]}>{title}</h1>
-      <img className={style["recipe-img"]} src={image} alt="recipe image"/>
+      <img className={style["recipe-img"]} src={image} alt="recipe"/>
       <Link className={style.link} to={`/recipe/${id}`} target="_blank" rel="noopener noreferrer">Click here for more information</Link>
       <div className={style["icons-container"]}>
         {dairyFree && <img className={style["icon"]} src={dairy} alt="dairy free icon"/>}
