@@ -33,11 +33,11 @@
     <li>All button</li>
     <li>Search bar</li>
     <li>Recipes card preview</li>
-    <li>Error and warning message</li>
+    <li>Error, Warning and Loading message</li>
     <li>Links</li>
     <li>Rendering</li>
   </ul>
-  <ul>CSS
+  <ul>CSS/SASS
     <li>All app styles</li>
     <li>Media queries</li>
   </ul>

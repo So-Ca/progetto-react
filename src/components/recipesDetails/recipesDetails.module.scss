@@ -1,35 +1,33 @@
 /* variables */
-:root{
-  --mainColor: #C4E303;
-  --secondaryColor: #5c3100;
-  --paragraphColor: #444444;
-  --textColor: #333333;
-  --bgColor: rgb(196, 227, 3, 0.1);
-  --titleFont: "juice", sans-serif;
-  --primaryFont: "Hedvig Letters Sans", sans-serif;
-  --secondaryFont: "Josefin Sans", sans-serif;
-  --thirdFont: "Playpen Sans", sans-serif;
-  --thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
-  --thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
-  --thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
-  --thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
-}
+$mainColor: #C4E303;
+$secondaryColor: #5c3100;
+$paragraphColor: #444444;
+$textColor: #333333;
+$bgColor: rgb(196, 227, 3, 0.1);
+$titleFont: "juice", sans-serif;
+$primaryFont: "Hedvig Letters Sans", sans-serif;
+$secondaryFont: "Josefin Sans", sans-serif;
+$thirdFont: "Playpen Sans", sans-serif;
+$thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
+$thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
+$thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
+$thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
 
 .page{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: var(--bgColor);
+  background: $bgColor;
 }
 
 .recipe-name{
   margin: 2% auto;
   text-align: center;
-  font-family: var(--secondaryFont);
+  font-family: $secondaryFont;
   font-size: 4rem;
-  color: var(--secondaryColor);
-  text-shadow: var(--thickGreenShading);
+  color: $secondaryColor;
+  text-shadow: $thickGreenShading;
 }
 
 .img-info-container{
@@ -37,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 10px var(--secondaryColor);
+  box-shadow: 0 0 10px $secondaryColor;
   background: #ffffff;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -49,8 +47,8 @@
 
 .info-container{
   margin: auto;
-  font-family: var(--primaryFont);
-  color: var(--textColor);
+  font-family: $primaryFont;
+  color: $textColor;
   font-size: 1.2rem;
   line-height: 3;
 }
@@ -77,18 +75,18 @@
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  box-shadow: 0 0 10px var(--secondaryColor);
+  box-shadow: 0 0 10px $secondaryColor;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .recipe-summary{
   margin: 2% 4.5%;
-  font-family: var(--primaryFont);
+  font-family: $primaryFont;
   font-size: 1.2rem;
   text-align: justify;
   line-height: 1.5;
-  color: var(--paragraphColor);
+  color: $paragraphColor;
 }
 
 .ingredients-section{
@@ -97,7 +95,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0 10px var(--secondaryColor);
+  box-shadow: 0 0 10px $secondaryColor;
   border-radius: 10px;
   background: #ffffff;
 }
@@ -120,16 +118,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-family: var(--primaryFont);
+  font-family: $primaryFont;
   font-size: 1.5rem;
   line-height: 1.5;
-  color: var(--paragraphColor);
+  color: $paragraphColor;
   position: relative;
   padding-left: 20px;
 }
 .qt:before{
   content: "🌿";
-  color: var(--mainColor);
+  color: $mainColor;
   font-size: 1rem;
   position: absolute;
   left: -10px;
@@ -138,9 +136,9 @@
 .subheading{
   margin: 2% auto;
   text-align: center;
-  font-family: var(--secondaryFont);
-  color: var(--secondaryColor);
-  text-shadow: var(--greenShadow);
+  font-family: $secondaryFont;
+  color: $secondaryColor;
+  text-shadow: $thinGreenShading;
   font-size: 2.1rem;
 }
 
@@ -163,20 +161,20 @@
 .steps{
   margin: 2% auto;
   text-align: justify;
-  font-family: var(--primaryFont);
-  color: var(--paragraphColor);
+  font-family: $primaryFont;
+  color: $paragraphColor;
   font-size: 1.2rem;
   line-height: 1.5;
-  box-shadow: 0 0 5px var(--secondaryColor);
+  box-shadow: 0 0 5px $secondaryColor;
   border-radius: 10px;
   background: #ffffff;
 }
 
 .step-num{
   text-align: center;
-  font-family: var(--secondaryFont);
+  font-family: $secondaryFont;
   font-size: 1.5rem;
-  color: var(--secondaryColor);
+  color: $secondaryColor;
 }
 
 .equip{
@@ -192,7 +190,7 @@
   .recipe-name{
     margin: 5% auto;
     font-size: 2rem;
-    text-shadow: var(--thinGreenShading);
+    text-shadow: $thinGreenShading;
   }
   .img-info-container{
     margin: auto 15%;
@@ -239,7 +237,7 @@
   .recipe-name{
     margin: 5% auto;
     font-size: 2rem;
-    text-shadow: var(--thinGreenShading);
+    text-shadow: $thinGreenShading;
   }
   .img-info-container{
     margin: auto 15%;
@@ -286,7 +284,7 @@
   .recipe-name{
     margin: 5% auto;
     font-size: 3rem;
-    text-shadow: var(--thinGreenShading);
+    text-shadow: $thinGreenShading;
   }
   .img-info-container{
     margin: auto 15%;
@@ -333,7 +331,7 @@
   .recipe-name{
     margin: 5% auto;
     font-size: 3.5rem;
-    text-shadow: var(--thinGreenShading);
+    text-shadow: $thinGreenShading;
   }
   .img-info-container{
     margin: auto 10%;

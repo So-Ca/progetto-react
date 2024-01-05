@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import axios from "axios";
-import Footer from "./Footer";
-import veg from "../assets/images/icons/vegan.png";
-import veggy from "../assets/images/icons/vegetarian.png";
-import dairy from "../assets/images/icons/dairyFree.png";
-import gluten from "../assets/images/icons/glutenFree.png";
-import healthy from "../assets/images/icons/healthy.png";
-import errorIcon from "../assets/images/icons/error-icon.png";
-import style from "../style/recipesDetails.module.css";
+import style from "./recipesDetails.module.scss";
+import Footer from "../footer/Footer";
+import veg from "../../assets/images/icons/vegan.png";
+import veggy from "../../assets/images/icons/vegetarian.png";
+import dairy from "../../assets/images/icons/dairyFree.png";
+import gluten from "../../assets/images/icons/glutenFree.png";
+import healthy from "../../assets/images/icons/healthy.png";
+import errorIcon from "../../assets/images/icons/error-icon.png";
 
 function RecipesDetails(){
   const {id} = useParams();
@@ -19,7 +19,7 @@ function RecipesDetails(){
   useEffect( ()=> {
     async function fetchDetails() {
       try {
-        const apiKey = "ae960525345346719ea2b99447dd03a3";
+        const apiKey = process.env.REACT_APP_API_KEY;
         const response = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`);
         const data = await response.data;
         setRecipeDetail(data);
@@ -122,7 +122,10 @@ function RecipesDetails(){
           </div>
         </div>
       ) : (
-        <code>...Loading...</code>
+        <div className="loader-container">
+          ...Loading...
+          <div className="loader"></div>
+        </div>
       )}
       {error && (
         <div className="error-message">

@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from "../assets/images/veggy-logo.avif";
-import instagram from "../assets/images/icons/instagram.svg";
-import facebook from "../assets/images/icons/facebook.svg";
-import twitter from "../assets/images/icons/twitter.svg";
-import tiktok from "../assets/images/icons/tiktok.svg";
-import youtube from "../assets/images/icons/youtube.svg";
-import style from "../style/footer.module.css";
+import style from "./footer.module.scss";
+import logo from "../../assets/images/veggy-logo.avif";
+import instagram from "../../assets/images/icons/instagram.svg";
+import facebook from "../../assets/images/icons/facebook.svg";
+import twitter from "../../assets/images/icons/twitter.svg";
+import tiktok from "../../assets/images/icons/tiktok.svg";
+import youtube from "../../assets/images/icons/youtube.svg";
 
 function Footer() {
   return (

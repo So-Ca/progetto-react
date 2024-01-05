@@ -1,19 +1,17 @@
 /* variables */
-:root{
-  --mainColor: #C4E303;
-  --secondaryColor: #5c3100;
-  --paragraphColor: #444444;
-  --textColor: #333333;
-  --bgColor: rgb(196, 227, 3, 0.1);
-  --titleFont: "juice", sans-serif;
-  --primaryFont: "Hedvig Letters Sans", sans-serif;
-  --secondaryFont: "Josefin Sans", sans-serif;
-  --thirdFont: "Playpen Sans", sans-serif;
-  --thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
-  --thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
-  --thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
-  --thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
-}
+$mainColor: #C4E303;
+$secondaryColor: #5c3100;
+$paragraphColor: #444444;
+$textColor: #333333;
+$bgColor: rgb(196, 227, 3, 0.1);
+$titleFont: "juice", sans-serif;
+$primaryFont: "Hedvig Letters Sans", sans-serif;
+$secondaryFont: "Josefin Sans", sans-serif;
+$thirdFont: "Playpen Sans", sans-serif;
+$thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
+$thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
+$thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
+$thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
 
 .app{
   margin: 1%;
@@ -34,9 +32,9 @@
 
 .app-title{
   font-size: 3.5rem;
-  color: var(--mainColor);
-  text-shadow: var(--thickBrownShading);
-  font-family: var(--titleFont);
+  color: $mainColor;
+  text-shadow: $thickBrownShading;
+  font-family: $titleFont;
 }
 
 /* searchbar */
@@ -66,7 +64,7 @@
 }
 .search-btn:hover{
   cursor: pointer;
-  border: 1px solid var(--secondaryColor);
+  border: 1px solid $secondaryColor;
 }
 
 /* carousel */
@@ -92,24 +90,24 @@
   width: 100px;
   height: 50px;
   border-radius: 10px;
-  font-family: var(--secondaryFont);
+  font-family: $secondaryFont;
   font-size: 1.1rem;
-  border: 1px solid var(--mainColor);
+  border: 1px solid $mainColor;
   background: rgb(222, 222, 222);
-  box-shadow: 0 0 5px var(--secondaryColor);
-  color: var(--secondaryColor);
+  box-shadow: 0 0 5px $secondaryColor;
+  color: $secondaryColor;
 }
 .show-more-btn:hover{
   cursor: pointer;
   font-weight: bold;
-  border: 1px solid var(--secondaryColor);
-  box-shadow: 5px 5px 3px var(--secondaryColor);
+  border: 1px solid $secondaryColor;
+  box-shadow: 5px 5px 3px $secondaryColor;
   transition: 0.3s linear;
 }
 .show-more-btn:active{
-  background: var(--secondaryColor);
-  color: var(--mainColor);
-  border: 1px solid var(--mainColor);
+  background: $secondaryColor;
+  color: $mainColor;
+  border: 1px solid $mainColor;
   transition: 0s;
 }
 

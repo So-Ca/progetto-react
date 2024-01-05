@@ -1,7 +1,7 @@
 /* font */
 @font-face{
   font-family: "juice";
-  src: url("../assets/fonts/orange-juice/orange\ juice\ 2.0.ttf") format('truetype');
+  src: url("./assets/fonts/orange-juice/orange\ juice\ 2.0.ttf") format('truetype');
 }
 
 /* global */
@@ -26,6 +26,31 @@ code{
 .logo{
   max-width: 100px;
   max-height: 100px;
+}
+
+/* loader */
+.loader-container{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  font-family: "juice";
+  font-size: 2rem;
+  color: #5C3100;
+}
+
+.loader{
+  margin: 20% auto;
+  position: absolute;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid rgb(196, 227, 3, 0.5);
+  border-top: 8px solid #5C3100;
+  animation: spin 3s linear infinite;
 }
 
 /* error */
@@ -77,6 +102,14 @@ code{
 .warning-icon{
   max-width: 100px;
   max-height: 100px;
+}
+
+@keyframes spin {
+  from{ 
+  transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
 }
 
 /* media query */

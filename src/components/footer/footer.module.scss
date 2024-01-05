@@ -1,25 +1,23 @@
 /* variables */ 
-:root{
-  --mainColor: #C4E303;
-  --secondaryColor: #5c3100;
-  --paragraphColor: #444444;
-  --textColor: #333333;
-  --bgColor: rgb(196, 227, 3, 0.1);
-  --titleFont: "juice", sans-serif;
-  --primaryFont: "Hedvig Letters Sans", sans-serif;
-  --secondaryFont: "Josefin Sans", sans-serif;
-  --thirdFont: "Playpen Sans", sans-serif;
-  --thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
-  --thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
-  --thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
-  --thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
-}
+$mainColor: #C4E303;
+$secondaryColor: #5c3100;
+$paragraphColor: #444444;
+$textColor: #333333;
+$bgColor: rgb(196, 227, 3, 0.1);
+$titleFont: "juice", sans-serif;
+$primaryFont: "Hedvig Letters Sans", sans-serif;
+$secondaryFont: "Josefin Sans", sans-serif;
+$thirdFont: "Playpen Sans", sans-serif;
+$thinGreenShading: -1px 0 #C4E303, 0 1px #C4E303, 1px 0 #C4E303, 0 -1px #C4E303;
+$thinBrownShading: -1px 0 #5c3100, 0 1px #5c3100, 1px 0 #5c3100, 0 -1px #5c3100;
+$thickBrownShading: -5px 0 #5c3100, 0 5px #5c3100, 5px 0 #5c3100, 0 -5px #5c3100;
+$thickGreenShading: -3px 0 #C4E303, 0 3px #C4E303, 3px 0 #C4E303, 0 -3px #C4E303;
 
 .footer{
   margin: auto;
   height: 150px;
   width: 78%;
-  border-top: 1px solid var(--mainColor);
+  border-top: 1px solid $mainColor;
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
@@ -35,19 +33,19 @@
 
 .copyright{
   margin: auto;
-  font-family: var(--secondaryFont);
+  font-family: $secondaryFont;
   font-size: 1.2rem;
-  color: var(--paragraphColor);
+  color: $paragraphColor;
 }
 
 /* contacts */
 .contacts{
   margin: auto;
   text-decoration: none;
-  font-family: var(--secondaryFont);
+  font-family: $secondaryFont;
   font-size: 1.2rem;
-  color: var(--secondaryColor);
-  text-shadow: var(--thinGreenShading);
+  color: $secondaryColor;
+  text-shadow: $thinGreenShading;
 }
 .contacts:hover{
   cursor: pointer;

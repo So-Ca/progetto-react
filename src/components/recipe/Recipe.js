@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import style from "../style/recipe.module.css";
-import dairy from "../assets/images/icons/dairyFree.png";
-import gluten from "../assets/images/icons/glutenFree.png";
-import healthy from "../assets/images/icons/healthy.png";
-import veg from "../assets/images/icons/vegan.png";
-import veggy from "../assets/images/icons/vegetarian.png";
+import style from "./recipe.module.scss";
+import dairy from "../../assets/images/icons/dairyFree.png";
+import gluten from "../../assets/images/icons/glutenFree.png";
+import healthy from "../../assets/images/icons/healthy.png";
+import veg from "../../assets/images/icons/vegan.png";
+import veggy from "../../assets/images/icons/vegetarian.png";
 
 function Recipe({props}) {
   const { id, image, dairyFree, glutenFree, vegan, vegetarian, veryHealthy} = props;
