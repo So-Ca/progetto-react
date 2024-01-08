@@ -8,11 +8,11 @@
     This application is used to search for vegetarian recipes and view their details.
   </p>
 
-![header](https://github.com/So-Ca/progetto-react/assets/121359947/4af4d9e6-7ea4-4b8e-8fb7-34a9f41b615b)
-![section](https://github.com/So-Ca/progetto-react/assets/121359947/04069a17-b448-4ea5-9802-b0036a60e0eb)
-![footer](https://github.com/So-Ca/progetto-react/assets/121359947/e3286807-e4b7-4672-a77a-560ae3952294)
-![head-details](https://github.com/So-Ca/progetto-react/assets/121359947/1803e1a9-a2dc-4486-819d-ad118962b2a9)
-![sec-details](https://github.com/So-Ca/progetto-react/assets/121359947/4e361ab5-44dc-4a18-9f6b-df0c13ee2b35)
+![header](https://github.com/So-Ca/progetto-react/assets/121359947/a3cef5d0-70ce-49cd-a608-4d6aa7580f78)
+![section](https://github.com/So-Ca/progetto-react/assets/121359947/8afa67de-cee0-4001-b5bb-5fe5e071515b)
+![footer](https://github.com/So-Ca/progetto-react/assets/121359947/f372ef74-a0f2-4e95-92d7-7562c6aa613e)
+![head-details](https://github.com/So-Ca/progetto-react/assets/121359947/e16bf687-79de-4ac3-ab60-655c8847fcc1)
+![sec-details](https://github.com/So-Ca/progetto-react/assets/121359947/fe8d9a47-3345-4320-8c57-225f479e0734)
 
 
   <h3>table of contents</h3>
@@ -57,8 +57,9 @@
 
   <p>Completely responsive site and it can be used in several device.</p>
 
-![responsive-min](https://github.com/So-Ca/progetto-react/assets/121359947/819c0e59-01ee-4913-8d79-bf50bf806bad)
-![responsive-mid](https://github.com/So-Ca/progetto-react/assets/121359947/83953730-5e1c-4884-9429-3ea70da6b44b)
+![responsive-min](https://github.com/So-Ca/progetto-react/assets/121359947/10109259-794d-4008-bb05-9ae2826ef94d)
+![responsive-mid](https://github.com/So-Ca/progetto-react/assets/121359947/6991009e-aaa1-4c50-9523-e4a9a565ff7a)
+
 
 
   <a name="contacts"></a>
