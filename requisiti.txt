@@ -1,0 +1,53 @@
+PROGETTO-REACT
+
+[] - Leggi articolo "style guide"
+[X] - Strutturare il progetto a mano con un disegno magari e scrivere le funzionalità
+[] - Usare Google e StackOverflow per cercare ciò che non è chiaro
+
+	-- REQUISITI --
+  [X] 1_ Barra ricerca per ricette veggy
+  [X] 2_ Ogni ricetta cercata deve mostrare almeno titolo e immagine copertina
+  [X] 3_ Cliccare sulla ricetta porta ad una pagina dedicata, dove vengono mostrate ulteriori informazioni
+  [X] 4_ Gestione degli errori e messaggio di errore personalizzato
+  [X] 5_ UI e UX semplice e facile da usare
+  [X] 6_ Struttura dell'applicaizone organizzata e comprensibile
+  [X] 7_ Responsive design (togliere le direttive query vuote)
+  [X] 8_ Usare uno o più tra:
+                          [X] - React Hooks
+                          [X] - Axios
+                          [X] - React-Router
+                          [] - Redux / Content API
+  [X] 9_ Togliere tutti i file di Prove e l'import su index.js
+  [X] 10_ Mettere il limite ricerca a 100 ricette
+  [] 11_ Capire perche i valori nutrizionali sono undefined (carbs, protein, fats)
+  [X] 12_ Media Query per messaggi di errore
+  [X] 13_ Togliere la possibilità di cercare ricette non vegetariane + messaggio di errore con istruzioni sul perchè non è stato trovato niente
+  [X] 14_ Mettere nel file readme link al sito della app
+  [X] 15_ Mettere link app alla presentazione
+
+	-- CORREZIONI --
+  [X] 1_ Errore 401, 402, 404
+  [X] 2_ Componente MainPage dentro la Route
+  [X] 3_ Ordinare file di stile dei componenti
+  [X] 4_ Loader per la fase di caricamento
+  [X] 5_ File .env
+  [X] 6_ Implementare SASS al progetto
+  [X] 7_ Aggiungere slide "correzioni" alla presentazione
+  [X] 8_ Caricare il progetto su GitHub
+  [X] 9_ Caricare il progetto su netlify
+  [X] 10_ Rimettere le foto nel file readme
+  [X] 11_ Rimettere il file .env nel gitignore, ricorda di aggiungere la variabile su netlify e di ricaricare la build dopo aver aggiunto la variabile
+  
+  -- INFO --
+Link API: https://spoonacular.com/food-api/docs
+ID: sonnycapu@gmail.com
+PASS: Skyapi1988
+
+- PRESENTAZIONE PDF:
+  [X] - Google slide
+  [X] - Link al sito (netlify)
+  [X] - Link alla repo GitHub
+  [X] - Guarda vecchie presentazioni per spunti
+  [X] - Post linkedin con link alla presentazione e al sito
+
+[X] - Caricare la presentazione su start2impact: "Progetto React di Sonny Caputo"

@@ -1,0 +1,13 @@
+ID1: sonnycapu@gmail.com
+PASS1: Skyspo1988
+REACT_APP_API_KEY=ae960525345346719ea2b99447dd03a3
+
+ID2: sonnycap88@gmail.com
+PASS2: Skyveg1988
+REACT_APP_DEV_KEY=6779e77ef30c4cae83ef9501b7330da6
+
+ID3: sonnycapu@outlook.it
+PASS3: Skyapi1988
+REACT_APP_PROVE_KEY=bec0e962a486434fbb9f3b5877b07ddc
+
+API: https://spoonacular.com/food-api/docs 
